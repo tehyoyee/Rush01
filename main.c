@@ -6,16 +6,16 @@
 /*   By: taehykim <taehykim@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 13:53:50 by taehykim          #+#    #+#             */
-/*   Updated: 2021/09/18 21:21:30 by taehykim         ###   ########.fr       */
+/*   Updated: 2021/09/18 21:35:40 by taehykim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
-int		count_row_left(int (*ptr)[4], int i);
 void 	check_row_left(int row_left, int (*ptr)[4]);
-int		count_row_right(int (*ptr)[4], int i);
 void 	check_row_right(int row_right, int (*ptr)[4]);
+void 	check_col_up(int col_up, int (*ptr)[4]);
+void 	check_col_down(int col_down, int (*ptr)[4]);
 void	permu(int N, int (*ptr)[4]);
 
 int len = 4;
@@ -36,8 +36,6 @@ int main(void) {
 
 	int i = 0;
 	int j = 0;
-	printf("\n\n\n");
-	
 	int	row1left = 1;
 	int	row2left = 2;
 	int	row3left = 4;
@@ -46,24 +44,15 @@ int main(void) {
 	int	row2right = 2;
 	int	row3right = 3;
 	int	row4right = 4;
-	
+	int	col1up = 1;
+	int	col2up = 2;
+	int	col3up = 3;
+	int	col4up = 4;
+	int	col1down = 1;
+	int	col2down = 2;
+	int	col3down = 3;
+	int	col4down = 4;
 
-/*	
-	while (i < 24)
-	{
-		j = 0;
-		printf("%d   ", i);
-		while (j < 4)
-		{
-			printf("%d", row_1[i][j]);
-			j++;
-		}
-		i++;
-		printf("\n");
-	}
-	printf("\n\n\n");
-
-*/
 	check_row_left(1, row_1);
 	check_row_left(2, row_2);
 	check_row_left(3, row_3);

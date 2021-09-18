@@ -6,7 +6,7 @@
 /*   By: taehykim <taehykim@student.42seoul.kr      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 19:18:42 by taehykim          #+#    #+#             */
-/*   Updated: 2021/09/18 21:08:43 by taehykim         ###   ########.fr       */
+/*   Updated: 2021/09/18 21:32:49 by taehykim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,4 +90,34 @@ void 	check_row_right(int row_right, int (*ptr)[4])
 		}
 		i++;
 	}
+}
+
+
+
+////////////////////////////////////////////////////////////////////////
+//
+//
+//
+/////////////////////////////////
+//
+
+
+void 	count_col_up(int row_right, int (*ptr)[4])
+{
+
+}
+
+void	check_col_up(int row_right, int (*ptr)[4])
+{
+
+}
+
+void 	count_col_down(int row_right, int (*ptr)[4])
+{
+
+}
+
+void 	check_col_down(int row_right, int (*ptr)[4])
+{
+
 }
